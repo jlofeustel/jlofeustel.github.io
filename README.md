@@ -1,7 +1,6 @@
-# cheeriocheng.github.io
+# jlofeustel.github.io
 
-Intricate natural forms emerge from simple logic. Small change in the logic results in incredible variations. Snowflakes, tree branches, seashells, these are all fascinating natural formation with infinite possibilities.
-
-I created a series of 'airshells', shells that mimic the logic of seashell formation, for Tilandsia, or air plants. You can make your own using this webpage: cheeriocheng.github.io
-
-More info on this project: http://www.instructables.com/id/Generating-Airshells-on-a-Web-Browser/
+<b> *All code is original to cheeriocheng.github.io* <b> <br>
+<b> *Several shell variables have been uncommented in the original code to allow for 3D-printable shell designs* <b>
+  
+More info on the original project: http://www.instructables.com/id/Generating-Airshells-on-a-Web-Browser/
