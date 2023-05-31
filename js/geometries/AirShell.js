@@ -38,15 +38,15 @@ class AirShell {
 
   updateParams(params) {
     //// get data from control panel
-    // this.A = p["A"];
-    // this.turns = p["turns"];
-    // this.deltaTheta = degToRad(p["deltaTheta"]);
-    // this.D = p["D"];
-    // this.steps = p["steps"];
-    // this.cSteps = p["cSteps"];
-    // this.phi = degToRad(p["phi"]);
-    // this.mu = degToRad(p["mu"]);
-    // this.omega = degToRad(p["omega"]);
+    this.A = p["A"];
+    this.turns = p["turns"];
+    this.deltaTheta = degToRad(p["deltaTheta"]);
+    this.D = p["D"];
+    this.steps = p["steps"];
+    this.cSteps = p["cSteps"];
+    this.phi = degToRad(p["phi"]);
+    this.mu = degToRad(p["mu"]);
+    this.omega = degToRad(p["omega"]);
     this.alpha = degToRad(params.alpha);
     this.beta = degToRad(params.beta);
     this.a = params.ellipse_a;

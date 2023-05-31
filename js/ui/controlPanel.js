@@ -39,21 +39,21 @@ cFormDiv.appendChild(cForm);
 
 //add sliders
 
-// addFormParam(cForm, "A", 0.25, 0.1, 1.0, 0.05);
-// addFormParam(cForm, "turns", 6.4, 0.4, 10.0, 0.2);
+addFormParam(cForm, "A", 0.25, 0.1, 1.0, 0.05);
+addFormParam(cForm, "turns", 6.4, 0.4, 10.0, 0.2);
 
-// addFormParam(cForm, "D", 1.0, 0.0, 10.0, 1.0);
-// addFormParam(cForm, "steps", 30.0, 10.0, 200.0, 10.0); //100
-// addFormParam(cForm, "cSteps", 30.0, 1.0, 20.0, 1.0);
+addFormParam(cForm, "D", 1.0, 0.0, 10.0, 1.0);
+addFormParam(cForm, "steps", 30.0, 10.0, 200.0, 10.0); //100
+addFormParam(cForm, "cSteps", 30.0, 1.0, 20.0, 1.0);
 
 addFormParam(cForm, "beta", 25.0,1.0, 89.0, 2.5, "b1", "b2");
-// addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0);
-// addFormParam(cForm, "mu", 30.0, 0.0, 90.0, 1.0);
-// addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0);
+addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0);
+addFormParam(cForm, "mu", 30.0, 0.0, 90.0, 1.0);
+addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0);
 
 addFormParam(cForm, "alpha", 83.0, 82.0, 90.0, 0.25,"a1","a2");
 addFormParam(cForm, "ellipse_a", 1, 1.5, 2.9, 0.1,"e1","e2");
-// addFormParam(cForm, "deltaTheta", 18.0, 12.0, 23.0, 1.0); //18
+addFormParam(cForm, "deltaTheta", 18.0, 12.0, 23.0, 1.0); //18
 
 
 // to takeover its submit event.
