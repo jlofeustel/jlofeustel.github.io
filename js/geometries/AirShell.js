@@ -44,13 +44,12 @@ class AirShell {
     this.D = params.D;
     this.steps = params.steps;
     this.cSteps = params.cSteps;
+    this.alpha = degToRad(params.alpha);
+    this.beta = degToRad(params.beta);
     this.phi = degToRad(params.phi);
     this.mu = degToRad(params.mu);
     this.omega = degToRad(params.omega);
-    
-    this.alpha = degToRad(params.alpha);
-    this.beta = degToRad(params.beta);
-    //this.a = params.ellipse_a;
+    this.a = params.ellipse_a;
           
     //with the new parameter, generate the spiral and the surface loops 
     this.calcShell();
