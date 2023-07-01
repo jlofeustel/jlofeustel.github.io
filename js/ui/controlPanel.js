@@ -106,7 +106,7 @@ function exportToObj() {
   var exporter = new THREE.OBJExporter();
   var result = exporter.parse( scene );
   exportToFile("seashell_A-"+this.A.value+"_Turns-"+this.turns.value+"_D-"+this.D.value+"_Steps-"+this.steps.value+"_cSteps-"+this.cSteps.value+"_Beta-"
-               +this.beta.value+"_Phi-"+this.phi.value+"_Mu-"+this.mu.value+"_Omega-"+this.omega.value+"_Alpha-"+this.alpha.value+"_deltaTheta-"+this.deltaTheta.value+"_a-"+this.a.value+"_c-"+this.c.value+".obj", result);
+               +this.beta.value+"_Phi-"+this.phi.value+"_Mu-"+this.mu.value+"_Omega-"+this.omega.value+"_Alpha-"+this.alpha.value+"_deltaTheta-"+this.deltaTheta.value+"_a-"+this.a.value+"_b-"+this.b.value+".obj", result);
 }
 
 //from reza ali 
