@@ -77,6 +77,12 @@ function getControlParams() {
     omega: parseFloat(document.getElementById("omega").value),
     a: parseFloat(document.getElementById("a").value),
     b: parseFloat(document.getElementById("b").value),
+    
+    L: parseFloat(document.getElementById("L").value),
+    P: parseFloat(document.getElementById("P").value),
+    W1: parseFloat(document.getElementById("b").value),
+    W2: parseFloat(document.getElementById("b").value),
+    N: parseFloat(document.getElementById("b").value),
     //ellipse_a: parseFloat(document.getElementById("ellipse_a").value),
   };
 }
