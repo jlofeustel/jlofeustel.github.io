@@ -91,7 +91,8 @@ class AirShell {
         var r2 = Math.pow( Math.pow(Math.cos(s)/this.a,2) + Math.pow(Math.sin(s)/this.b,2), -0.5 ); //radius at this given angle s 
 
         // add ripples to the ellipse 
-        r2 += this.a*0.08 * Math.cos(s*12);
+        //r2 += this.a*0.08 * Math.cos(s*12);
+        r2 += this.L * Math.exp(-    Math.pow((2*(s-this.P))/this.W1,2)             )
 
         var ellipseX = newVertex.x + Math.cos(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad * this.D;   
         var ellipseY = newVertex.y + Math.cos(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
