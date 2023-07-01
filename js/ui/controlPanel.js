@@ -57,6 +57,12 @@ addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0); //24
 addFormParam(cForm, "deltaTheta", 18.0, 10.0, 25.0, 1.0); //18
 //addFormParam(cForm, "ellipse_a", 1, 1.5, 2.9, 0.1,"e1","e2");
 
+addFormParam(cForm, "L", 0.0, 0.0, 10.0, 0.5);
+addFormParam(cForm, "P", 1.0, 0.5, 90.0, 1.0);
+addFormParam(cForm, "W1", 0.05, 0.05, 1.0, .05);
+addFormParam(cForm, "W2", 0.05, 0.05, 1.0, .05);
+addFormParam(cForm, "N", 1.0, 1.0, 10.0, 1.0);
+
 // to takeover its submit event.
 cForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -73,9 +79,9 @@ button.addEventListener ("click", function() {
 
 function addFormParam(frm, d, vl, mn, mx, stp) {
 
-  var sliderText = document.createElement("sliderText");
-  sliderText.setAttribute("text", "sliderText");
-  frm.appendChild(sliderText);
+  //var sliderText = document.createElement("sliderText");
+  //sliderText.setAttribute("text", "sliderText");
+  //frm.appendChild(sliderText);
   
   var slider = document.createElement("input");
   slider.setAttribute( "id", d );
