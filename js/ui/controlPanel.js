@@ -72,6 +72,10 @@ button.addEventListener ("click", function() {
 });
 
 function addFormParam(frm, d, vl, mn, mx, stp) {
+
+  var sliderText = document.createElement("sliderText");
+  sliderText.setAttribute("text", "sliderText");
+  frm.appendChild(sliderText);
   
   var slider = document.createElement("input");
   slider.setAttribute( "id", d );
@@ -81,8 +85,7 @@ function addFormParam(frm, d, vl, mn, mx, stp) {
   slider.setAttribute( "max", mx );
   slider.setAttribute( "value", vl );
   slider.setAttribute( "step", stp );
-
-  frm.appendChild( slider );
+  frm.appendChild(slider);
 
   frm.appendChild( document.createElement("br") );
 
