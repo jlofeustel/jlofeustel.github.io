@@ -27,7 +27,7 @@ class AirShell {
     
     //these define the shape of the C ellipse
     this.a = 1.5; //1.3; 
-    this.b = 2.6;//1.76;
+    this.b = 2.6; //1.76;
     
     //store the data for the spiral and the shell 
     this._spiral = null;
@@ -49,6 +49,8 @@ class AirShell {
     this.phi = degToRad(params.phi);
     this.mu = degToRad(params.mu);
     this.omega = degToRad(params.omega);
+    this.a = params.a;
+    this.b = params.b;
     //this.a = params.ellipse_a;
           
     //with the new parameter, generate the spiral and the surface loops 
