@@ -46,12 +46,12 @@ addFormParam(cForm, "D", 1.0, -1.0, 1.0, 1.0); //winding direction, 1 for CW and
 addFormParam(cForm, "steps", 45.0, 10.0, 200.0, 10.0); //100
 addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0);
 
-addFormParam(cForm, "beta", 25.0,1.0, 90.0, 1.0, "b1", "b2");
+addFormParam(cForm, "beta", 25.0,1.0, 90.0, 1.0);
 addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0);
 addFormParam(cForm, "mu", 10.0, 0.0, 90.0, 1.0);
 addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0);
 
-addFormParam(cForm, "alpha", 83.0, 70.0, 90.0, 0.25,"a1","a2");
+addFormParam(cForm, "alpha", 83.0, 70.0, 90.0, 0.25);
 //addFormParam(cForm, "ellipse_a", 1, 1.5, 2.9, 0.1,"e1","e2");
 addFormParam(cForm, "deltaTheta", 18.0, 10.0, 25.0, 1.0); //18
 
