@@ -39,22 +39,23 @@ cFormDiv.appendChild(cForm);
 
 //add sliders
 
-addFormParam(cForm, "A", 3.25, 0.1, 5.0, 0.05);
-addFormParam(cForm, "turns", 6.4, 0.4, 10.0, 0.2);
+addFormParam(cForm, "A", 3.25, 0.1, 5.0, 0.05); //3.25
+addFormParam(cForm, "turns", 6.4, 0.4, 10.0, 0.2); //6.4
 
 addFormParam(cForm, "D", 1.0, -1.0, 1.0, 1.0); //winding direction, 1 for CW and -1 for CCW
 addFormParam(cForm, "steps", 45.0, 10.0, 200.0, 10.0); //100
-addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0);
+addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0); //24
 
-addFormParam(cForm, "beta", 25.0,1.0, 90.0, 1.0);
-addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0);
-addFormParam(cForm, "mu", 10.0, 0.0, 90.0, 1.0);
-addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0);
+addFormParam(cForm, "beta", 25.0,1.0, 90.0, 1.0); //25
+addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0); //70
+addFormParam(cForm, "mu", 10.0, 0.0, 90.0, 1.0); //10
+addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0); //30
 
-addFormParam(cForm, "alpha", 83.0, 70.0, 90.0, 0.25);
+addFormParam(cForm, "alpha", 83.0, 70.0, 90.0, 0.25); //83
 //addFormParam(cForm, "ellipse_a", 1, 1.5, 2.9, 0.1,"e1","e2");
 addFormParam(cForm, "deltaTheta", 18.0, 10.0, 25.0, 1.0); //18
-
+addFormParam(cForm, "a", 1.5, 0.1, 25.0, 0.1); //1.5
+addFormParam(cForm, "b", 2.6, 0.1, 25.0, 0.1); //2.6
 
 // to takeover its submit event.
 cForm.addEventListener("submit", function (event) {
@@ -106,7 +107,7 @@ function exportToObj() {
   var exporter = new THREE.OBJExporter();
   var result = exporter.parse( scene );
   exportToFile("seashell_A-"+this.A.value+"_Turns-"+this.turns.value+"_D-"+this.D.value+"_Steps-"+this.steps.value+"_cSteps-"+this.cSteps.value+"_Beta-"
-               +this.beta.value+"_Phi-"+this.phi.value+"_Mu-"+this.mu.value+"_Omega-"+this.omega.value+"_Alpha-"+this.alpha.value+"_deltaTheta-"+this.deltaTheta.value+".obj", result);
+               +this.beta.value+"_Phi-"+this.phi.value+"_Mu-"+this.mu.value+"_Omega-"+this.omega.value+"_Alpha-"+this.alpha.value+"_deltaTheta-"+this.deltaTheta.value+"_a-"+this.a.value+"_b-"+this.b.value+".obj", result);
 }
 
 //from reza ali 
