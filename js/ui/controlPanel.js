@@ -71,13 +71,8 @@ button.addEventListener ("click", function() {
   exportToObj();
 });
 
-function addFormParam(frm, d, vl, mn, mx, stp, imgLeft, imgRight ) {
-  var imgL = document.createElement("img");
-  imgL.src = "assets/icon_"+imgLeft+".png";
-  imgL.setAttribute("class", "sliderIcon");
-  frm.appendChild(imgL);
-
-
+function addFormParam(frm, d, vl, mn, mx, stp) {
+  
   var slider = document.createElement("input");
   slider.setAttribute( "id", d );
   slider.setAttribute("class","slider")
@@ -88,11 +83,6 @@ function addFormParam(frm, d, vl, mn, mx, stp, imgLeft, imgRight ) {
   slider.setAttribute( "step", stp );
 
   frm.appendChild( slider );
-
-  var imgR = document.createElement("img");
-  imgR.src = "assets/icon_"+imgRight+".png";
-  imgR.setAttribute("class", "sliderIcon");
-  frm.appendChild(imgR);
 
   frm.appendChild( document.createElement("br") );
 
