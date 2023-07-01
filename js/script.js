@@ -75,6 +75,8 @@ function getControlParams() {
     phi: parseFloat(document.getElementById("phi").value),
     mu: parseFloat(document.getElementById("mu").value),
     omega: parseFloat(document.getElementById("omega").value),
+    a: parseFloat(document.getElementById("a").value),
+    b: parseFloat(document.getElementById("b").value),
     //ellipse_a: parseFloat(document.getElementById("ellipse_a").value),
   };
 }
