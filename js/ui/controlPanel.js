@@ -105,8 +105,8 @@ function addFormParam(frm, d, vl, mn, mx, stp, imgLeft, imgRight ) {
 function exportToObj() {
   var exporter = new THREE.OBJExporter();
   var result = exporter.parse( scene );
-  exportToFile("seashell_A-"+this.A+"_Turns-"+this.turns+"_D-"+this.D+"_Steps-"+this.steps+"_cSteps-"+this.cSteps+"_Beta-"
-               +this.beta+"_Phi-"+this.phi+"_Mu-"+this.mu+"_Omega-"+this.omega+"_Alpha-"+this.alpha+"_deltaTheta-"+this.deltaTheta+".obj", result);
+  exportToFile("seashell_A-"+this.A.value+"_Turns-"+this.turns.value+"_D-"+this.D.value+"_Steps-"+this.steps.value+"_cSteps-"+this.cSteps.value+"_Beta-"
+               +this.beta.value+"_Phi-"+this.phi.value+"_Mu-"+this.mu.value+"_Omega-"+this.omega.value+"_Alpha-"+this.alpha.value+"_deltaTheta-"+this.deltaTheta.value+".obj", result);
 }
 
 //from reza ali 
