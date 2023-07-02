@@ -31,10 +31,10 @@ class AirShell {
 
     //these define the nodules and spikes on the shell surface
     this.L = 0.0; //0.0   height of each nodule
-    this.P = degToRad(1.0); //1.0   the angle that indicates the position of the nodule in the generative curve
+    this.P = degToRad(1); //1   the angle that indicates the position of the nodule in the generative curve
     this.W1 = 0.05; //0.05   the length of each nodule along the generative curve
     this.W2 = 0.05; //0.05   the length of each nodule along the helico-spiral
-    this.N = 1.0; //1.0   the number of nodules along a complete revolution of theta
+    this.N = 1; //1   the number of nodules along a complete revolution of theta
     
     //store the data for the spiral and the shell 
     this._spiral = null;
