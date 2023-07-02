@@ -57,8 +57,8 @@ addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0); //24
 addFormParam(cForm, "deltaTheta", 18.0, 10.0, 25.0, 1.0); //18
 //addFormParam(cForm, "ellipse_a", 1, 1.5, 2.9, 0.1,"e1","e2");
 
-addFormParam(cForm, "L", 0.0, 0.0, 10.0, 0.5);
-addFormParam(cForm, "P", 1.0, 0.5, 90.0, 1.0);
+addFormParam(cForm, "L", 0.0, 0.0, 10.0, 0.25);
+addFormParam(cForm, "P", 1.0, 0.0, 90.0, 1.0);
 addFormParam(cForm, "W1", 0.05, 0.05, 1.0, .05);
 addFormParam(cForm, "W2", 0.05, 0.05, 1.0, .05);
 addFormParam(cForm, "N", 1.0, 1.0, 10.0, 1.0);
