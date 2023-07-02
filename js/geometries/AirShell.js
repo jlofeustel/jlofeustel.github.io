@@ -106,7 +106,7 @@ class AirShell {
 
         // add ripples to the ellipse 
         //r2 += this.a*0.08 * Math.cos(s*12);
-        r2 += this.L * Math.exp(-1.0 * (Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*((((2.0*Math.PI)/this.N)*(((this.N*this.theta)/(2.0*Math.PI))-Math.round(((this.N*this.theta)/(2.0*Math.PI))))))/this.W2,2))))
+        r2 += this.L * Math.exp(-1.0 * (Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*((((2.0*Math.PI)/this.N)*(((this.N*rad)/(2.0*Math.PI))-Math.round(((this.N*rad)/(2.0*Math.PI))))))/this.W2,2))))
 
         var ellipseX = newVertex.x + Math.cos(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad * this.D;   
         var ellipseY = newVertex.y + Math.cos(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
