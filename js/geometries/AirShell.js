@@ -28,6 +28,13 @@ class AirShell {
     //these define the shape of the C ellipse
     this.a = 1.5; //1.3; 
     this.b = 2.6; //1.76;
+
+    //these define the nodules and spikes on the shell surface
+    this.L = 0.0; //0.0   height of each nodule
+    this.P = degToRad(0.0); //0.0   the angle that indicates the position of the nodule in the generative curve
+    this.W1 = 0.0; //0.0   the length of each nodule along the generative curve
+    this.W2 = 0.0; //0.0   the length of each nodule along the helico-spiral
+    this.N = 0.0; //0.0   the number of nodules along a complete revolution of theta
     
     //store the data for the spiral and the shell 
     this._spiral = null;
@@ -49,8 +56,15 @@ class AirShell {
     this.phi = degToRad(params.phi);
     this.mu = degToRad(params.mu);
     this.omega = degToRad(params.omega);
+    
     this.a = params.a;
     this.b = params.b;
+
+    this.L = params.L;
+    this.P = degToRad(params.P);
+    this.W1 = params.W1;
+    this.W2 = params.W2;
+    this.N = params.N; 
     //this.a = params.ellipse_a;
           
     //with the new parameter, generate the spiral and the surface loops 
@@ -92,7 +106,7 @@ class AirShell {
 
         // add ripples to the ellipse 
         //r2 += this.a*0.08 * Math.cos(s*12);
-        r2 += this.L * Math.exp(-1.0 * (Math.pow((2*(s-this.P))/this.W1,2) + Math.pow((2*((((2*Math.PI)/this.N)*(((this.N*this.theta)/(2.0*Math.PI))-Math.round(((this.N*this.theta)/(2.0*Math.PI))))))/this.W2,2))))
+        r2 += this.L * Math.exp(-1.0 * (Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*((((2.0*Math.PI)/this.N)*(((this.N*this.theta)/(2.0*Math.PI))-Math.round(((this.N*this.theta)/(2.0*Math.PI))))))/this.W2,2))))
 
         var ellipseX = newVertex.x + Math.cos(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad * this.D;   
         var ellipseY = newVertex.y + Math.cos(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
