@@ -80,9 +80,9 @@ function getControlParams() {
     
     L: parseFloat(document.getElementById("L").value),
     P: parseFloat(document.getElementById("P").value),
-    W1: parseFloat(document.getElementById("b").value),
-    W2: parseFloat(document.getElementById("b").value),
-    N: parseFloat(document.getElementById("b").value),
+    W1: parseFloat(document.getElementById("W1").value),
+    W2: parseFloat(document.getElementById("W2").value),
+    N: parseFloat(document.getElementById("N").value),
     //ellipse_a: parseFloat(document.getElementById("ellipse_a").value),
   };
 }
