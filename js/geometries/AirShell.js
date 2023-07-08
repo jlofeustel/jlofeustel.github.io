@@ -120,8 +120,12 @@ class AirShell {
         var ellipseZ = newVertex.z + Math.sin(s + this.phi) * r2 * rad;
 
         // adjust orientation of the ellipse 
-        ellipseX -= Math.sin(this.mu) * Math.sin(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
-        ellipseY += Math.sin(this.mu) * Math.sin(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad;
+        //ellipseX -= Math.sin(this.mu) * Math.sin(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
+        //ellipseY += Math.sin(this.mu) * Math.sin(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad;
+        ellipseX -= Math.sin(this.mu) * Math.sin(s + this.phi) * Math.sin(theta + this.omega) * r2;
+        ellipseY += Math.sin(this.mu) * Math.sin(s + this.phi) * Math.cos(theta + this.omega) * r2;
+        ellipseZ *= Math.cos(this.mu);
+
   
         cEllipseArray[i].push(new THREE.Vector3(ellipseX,ellipseY,ellipseZ));
       }
