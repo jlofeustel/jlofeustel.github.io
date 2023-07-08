@@ -84,8 +84,9 @@ function addFormParam(frm, d, vl, mn, mx, stp) {
   //sliderText.className = "text";
   
   var sliderText = document.createElement("div");
-  sliderText = document.createTextNode(d); 
+  var st = document.createTextNode(d); 
   sliderText.className = "sliderText";
+  sliderText.appendChild(st);
   frm.appendChild(sliderText);
   
   slider.setAttribute( "id", d );
