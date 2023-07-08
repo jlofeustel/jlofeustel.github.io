@@ -79,15 +79,13 @@ button.addEventListener ("click", function() {
 
 function addFormParam(frm, d, vl, mn, mx, stp) {
 
-  var slider = document.createElement("input");
-  //var sliderText = document.createTextNode(d);
-  //sliderText.className = "text";
-  
   var sliderText = document.createElement("div");
   var st = document.createTextNode(d); 
   sliderText.className = "sliderText";
   sliderText.appendChild(st);
   frm.appendChild(sliderText);
+
+  var slider = document.createElement("input");
   
   slider.setAttribute( "id", d );
   slider.setAttribute("class","slider")
@@ -96,7 +94,7 @@ function addFormParam(frm, d, vl, mn, mx, stp) {
   slider.setAttribute( "max", mx );
   slider.setAttribute( "value", vl );
   slider.setAttribute( "step", stp );
-  frm.appendChild(slider);
+  sliderText.appendChild(slider);
 
   frm.appendChild( document.createElement("br") );
 
