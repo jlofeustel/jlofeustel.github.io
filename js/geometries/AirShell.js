@@ -103,16 +103,18 @@ class AirShell {
       for (var j = 0; j < this.cSteps ; j++) {
         var s= j * Math.PI * 2.0 / this.cSteps;  //angular step around the ellipse 
         var r2 = Math.pow( Math.pow(Math.cos(s)/this.a,2) + Math.pow(Math.sin(s)/this.b,2), -0.5 ); //radius at this given angle s 
-        //var surfRad = 0.0  //placeholder for nodules
+        var surfRad = 0.0;  //placeholder for nodules
         
         // add ripples to the ellipse 
         //r2 += this.a*0.08 * Math.cos(s*12);
         //r2 += this.L * Math.exp(-1.0 * (Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*((((2.0*Math.PI)/this.N)*(((this.N*rad)/(2.0*Math.PI))-Math.round(((this.N*rad)/(2.0*Math.PI))))))/this.W2,2))))
-        //if (this.W1==0.0 || this.W2==0.0 || this.N==0) {
-          //surfRad = 0.0;
-        //} else {
-          //var lt = ((2.0*Math.PI) / this.N)*(this.N*theta/);
-        //}
+        if (this.W1==0.0 || this.W2==0.0 || this.N==0) {
+          surfRad = 0.0;
+        } else {
+          var lt = ((2.0*Math.PI)/this.N)*(((this.N*theta)/(2.0*Math.PI))-Math.round(((this.N*theta)/(2.0*Math.PI))));
+          surfRad = this.L*Math.exp(-1.0*(Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*lt)/this.W2, 2)));
+        }
+        r2 += surfRad;
 
         var ellipseX = newVertex.x + Math.cos(s + this.phi) * Math.cos(theta + this.omega) * r2 * rad * this.D;   
         var ellipseY = newVertex.y + Math.cos(s + this.phi) * Math.sin(theta + this.omega) * r2 * rad;
