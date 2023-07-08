@@ -31,10 +31,10 @@ class AirShell {
 
     //these define the nodules and spikes on the shell surface
     this.L = 0.0; //0.0   height of each nodule
-    this.P = degToRad(1); //1   the angle that indicates the position of the nodule in the generative curve
-    this.W1 = 0.05; //0.05   the length of each nodule along the generative curve
-    this.W2 = 0.05; //0.05   the length of each nodule along the helico-spiral
-    this.N = 1; //1   the number of nodules along a complete revolution of theta
+    this.P = degToRad(5); //5   the angle that indicates the position of the nodule in the generative curve
+    this.W1 = 5.0; //5.0   the length of each nodule along the generative curve
+    this.W2 = 0.39; //0.39   the length of each nodule along the helico-spiral
+    this.N = 10; //1   the number of nodules along a complete revolution of theta
     
     //store the data for the spiral and the shell 
     this._spiral = null;
@@ -107,7 +107,6 @@ class AirShell {
         
         // add ripples to the ellipse 
         //r2 += this.a*0.08 * Math.cos(s*12);
-        //r2 += this.L * Math.exp(-1.0 * (Math.pow((2.0*(s-this.P))/this.W1,2) + Math.pow((2.0*((((2.0*Math.PI)/this.N)*(((this.N*rad)/(2.0*Math.PI))-Math.round(((this.N*rad)/(2.0*Math.PI))))))/this.W2,2))))
         if (this.W1==0.0 || this.W2==0.0 || this.N==0) {
           surfRad = 0.0;
         } else {
