@@ -76,6 +76,8 @@ function getControlParams() {
   document.getElementById("omega_value").innerHTML = document.getElementById("omega").value;
   document.getElementById("a_value").innerHTML = document.getElementById("a").value;
   document.getElementById("b_value").innerHTML = document.getElementById("b").value;
+  document.getElementById("a2_value").innerHTML = document.getElementById("a2").value;
+  document.getElementById("b2_value").innerHTML = document.getElementById("b2").value;
   
   document.getElementById("L_value").innerHTML = document.getElementById("L").value;
   document.getElementById("P_value").innerHTML = document.getElementById("P").value;
@@ -97,6 +99,8 @@ function getControlParams() {
     omega: parseFloat(document.getElementById("omega").value),
     a: parseFloat(document.getElementById("a").value),
     b: parseFloat(document.getElementById("b").value),
+    a2: parseFloat(document.getElementById("a2").value),
+    b2: parseFloat(document.getElementById("b2").value),
     
     L: parseFloat(document.getElementById("L").value),
     P: parseFloat(document.getElementById("P").value),
