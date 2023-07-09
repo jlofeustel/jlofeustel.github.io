@@ -20,7 +20,7 @@ function init() {
   renderer = new THREE.WebGLRenderer({antialias: true});
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(0)
+  renderer.setClearColor(0);
   document.body.appendChild(renderer.domElement);
   
   //field of view, aspect ratio,  near and far clipping plane.
