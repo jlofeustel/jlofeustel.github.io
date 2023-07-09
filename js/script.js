@@ -63,6 +63,9 @@ function buildScene() {
 }
 
 function getControlParams() {
+  document.getElementById("A_value").innerHTML = document.getElementById("A").value;
+  document.getElementById("turns_value").innerHTML = document.getElementById("turns").value;
+
   return {
     A: parseFloat(document.getElementById("A").value),
     turns: parseFloat(document.getElementById("turns").value),
