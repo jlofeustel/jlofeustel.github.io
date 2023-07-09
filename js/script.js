@@ -68,7 +68,7 @@ function getControlParams() {
   document.getElementById("deltaTheta_value").innerHTML = document.getElementById("deltaTheta").value;
   document.getElementById("D_value").innerHTML = document.getElementById("D").value;
   document.getElementById("steps_value").innerHTML = document.getElementById("steps").value;
-  document.getElementById("csteps_value").innerHTML = document.getElementById("csteps").value;
+  document.getElementById("cSteps_value").innerHTML = document.getElementById("cSteps").value;
   document.getElementById("alpha_value").innerHTML = document.getElementById("alpha").value;
   document.getElementById("beta_value").innerHTML = document.getElementById("beta").value;
   document.getElementById("phi_value").innerHTML = document.getElementById("phi").value;
