@@ -29,6 +29,10 @@ class AirShell {
     this.a = 1.5; //1.3; 
     this.b = 2.6; //1.76;
 
+    //these define the cross-section of the ellipse
+    this.a2 = 0.75; //0.75
+    this.b2 = 0.75; //0.75
+
     //these define the nodules and spikes on the shell surface
     this.L = 0.0; //0.0   height of each nodule
     this.P = degToRad(5); //5   the angle that indicates the position of the nodule in the generative curve
@@ -59,6 +63,8 @@ class AirShell {
     
     this.a = params.a;
     this.b = params.b;
+    this.a2 = params.a2;
+    this.b2 = params.b2;
 
     this.L = params.L;
     this.P = degToRad(params.P);
@@ -168,15 +174,15 @@ class AirShell {
 
   buildCrossSection() {
     //ellipse 
-    var a = 0.75; //0.5;
-    var b = 0.75; //0.5;
+    //var a = 0.75; //0.5;
+    //var b = 0.75; //0.5;
     var pointsOnCurve = [];
     var steps = 20;
 
     for ( var i = 0; i <= steps; i ++ ) {
       var t = 2 * i / steps * Math.PI;
-      var tempX = Math.cos( t ) * b; 
-      var tempY = Math.sin( t ) * a; 
+      var tempX = Math.cos( t ) * this.b2; 
+      var tempY = Math.sin( t ) * this.a2; 
       pointsOnCurve.push( new THREE.Vector2(tempX, tempY));
     }
 
