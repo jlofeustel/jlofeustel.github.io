@@ -47,8 +47,8 @@ addFormParam(cForm, "D", 1.0, -1.0, 1.0, 1.0); //winding direction, 1 for CW and
 
 addFormParam(cForm, "a", 1.5, 0.1, 5.0, 0.05); //1.5
 addFormParam(cForm, "b", 2.6, 0.1, 5.0, 0.05); //2.6
-addFormParam(cForm, "a2", 0.75, 0.1, 1.25, 0.05); //0.75
-addFormParam(cForm, "b2", 0.75, 0.1, 1.25, 0.05); //0.75
+addFormParam(cForm, "a2", 0.75, 0.1, 5.0, 0.05); //0.75
+addFormParam(cForm, "b2", 0.75, 0.1, 5.0, 0.05); //0.75
 
 addFormParam(cForm, "mu", 10.0, 0.0, 90.0, 1.0); //10
 addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0); //30
