@@ -26,8 +26,8 @@ class AirShell {
     this.omega = degToRad(30);  // C curve yaw
     
     //these define the shape of the C ellipse
-    this.a = 1.5; //1.3; 
-    this.b = 2.6; //1.76;
+    this.a = 1.5; //1.3
+    this.b = 2.6; //1.76
 
     //these define the cross-section of the ellipse
     this.a2 = 0.75; //0.75
