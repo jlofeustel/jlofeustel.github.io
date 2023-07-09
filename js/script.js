@@ -65,6 +65,23 @@ function buildScene() {
 function getControlParams() {
   document.getElementById("A_value").innerHTML = document.getElementById("A").value;
   document.getElementById("turns_value").innerHTML = document.getElementById("turns").value;
+  document.getElementById("deltaTheta_value").innerHTML = document.getElementById("deltaTheta").value;
+  document.getElementById("D_value").innerHTML = document.getElementById("D").value;
+  document.getElementById("steps_value").innerHTML = document.getElementById("steps").value;
+  document.getElementById("csteps_value").innerHTML = document.getElementById("csteps").value;
+  document.getElementById("alpha_value").innerHTML = document.getElementById("alpha").value;
+  document.getElementById("beta_value").innerHTML = document.getElementById("beta").value;
+  document.getElementById("phi_value").innerHTML = document.getElementById("phi").value;
+  document.getElementById("mu_value").innerHTML = document.getElementById("mu").value;
+  document.getElementById("omega_value").innerHTML = document.getElementById("omega").value;
+  document.getElementById("a_value").innerHTML = document.getElementById("a").value;
+  document.getElementById("b_value").innerHTML = document.getElementById("b").value;
+  
+  document.getElementById("L_value").innerHTML = document.getElementById("L").value;
+  document.getElementById("P_value").innerHTML = document.getElementById("P").value;
+  document.getElementById("W1_value").innerHTML = document.getElementById("W1").value;
+  document.getElementById("W2_value").innerHTML = document.getElementById("W2").value;
+  document.getElementById("N_value").innerHTML = document.getElementById("N").value;
 
   return {
     A: parseFloat(document.getElementById("A").value),
