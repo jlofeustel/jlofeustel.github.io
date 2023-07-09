@@ -86,7 +86,6 @@ function addFormParam(frm, d, vl, mn, mx, stp) {
   frm.appendChild(sliderText);
 
   var slider = document.createElement("input");
-  
   slider.setAttribute( "id", d );
   slider.setAttribute("class","slider")
   slider.setAttribute( "type",'range' );
@@ -95,6 +94,10 @@ function addFormParam(frm, d, vl, mn, mx, stp) {
   slider.setAttribute( "value", vl );
   slider.setAttribute( "step", stp );
   sliderText.appendChild(slider);
+
+  var sliderValue = document.createTextNode(document.getElementById(d).value);
+  sliderValue.className = "sliderText";
+  sliderText.appendChild(sliderValue);
 
   frm.appendChild( document.createElement("br") );
 
