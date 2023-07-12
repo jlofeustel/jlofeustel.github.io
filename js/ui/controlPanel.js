@@ -52,7 +52,7 @@ addFormParam(cForm, "b2", 0.75, 0.1, 5.0, 0.05); //0.75
 
 addFormParam(cForm, "mu", 10.0, 0.0, 90.0, 1.0); //10
 addFormParam(cForm, "omega", 30.0, 0.0, 90.0, 1.0); //30
-addFormParam(cForm, "phi", 70.0, 0.0, 90.0, 1.0); //70
+addFormParam(cForm, "phi", 70.0, -90.0, 90.0, 1.0); //70
 
 addFormParam(cForm, "steps", 45.0, 10.0, 200.0, 10.0); //100
 addFormParam(cForm, "cSteps", 24.0, 1.0, 50.0, 1.0); //24
